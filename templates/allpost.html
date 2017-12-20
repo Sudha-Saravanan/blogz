@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for user in user_list %}
+        <lable><b> User Id: </b></lable>
+        {{ user.id }}
+        <lable>Username:</lable>
+        <input type="text" name= "user_link" value= "{{ user.username }}"/>
+    {% endfor %}
+{% endblock %}
